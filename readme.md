@@ -1,17 +1,17 @@
-# Terraform Random Provider Schema Repository
+# Terraform Local Provider Schema Repository
 
-This repository contains the generated Go files for the Random provider schemas, which are based on the Terraform Random Provider. These schema files can be used as a reference when writing tools, such as TFLint plugins, that interact with the Random provider.
+This repository contains the generated Go files for the Local provider schemas, which are based on the Terraform Local Provider. These schema files can be used as a reference when writing tools, such as TFLint plugins, that interact with the Local provider.
 
-The internal package from the Terraform Random Provider is not publicly accessible, which is why this repository was created to provide access to the resource schemas.
+The internal package from the Terraform Local Provider is not publicly accessible, which is why this repository was created to provide access to the resource schemas.
 
 ## Repository Structure
 
 Each tag version of the Terraform Random Provider has a corresponding tag in this repository. You can find the schema files for each provider version under the respective tag.
 
-e.g.: to use `random`'s `3.5.1` schema, you could:
+e.g.: to use `local`'s `2.4.0` schema, you could:
 
 ```shell
-$ go get github.com/lonegunmanb/terraform-random-schema/v3@v3.5.1
+$ go get github.com/lonegunmanb/terraform-local-schema/v2@v2.4.0
 ```
 
 Then you can read schemas like this:
@@ -20,7 +20,7 @@ Then you can read schemas like this:
 import (
 "testing"
 
-"github.com/lonegunmanb/terraform-random-schema/v3/generated"
+"github.com/lonegunmanb/terraform-local-schema/v2/generated"
 "github.com/stretchr/testify/assert"
 )
 
